@@ -1,3 +1,5 @@
+/* CORES */
+
 .color-black {
     background-color: black;
 }
@@ -14,14 +16,27 @@
     background-color: green;
 }
 
-.border-pixel {
+.color-white {
+    background-color: white;
+}
+
+/* BORDAS */
+.border {
     border: solid 1px;
 }
 
-.size-pixel {
-
+/* TAMANHOS */
+.size-mainboard {
+    width: 25px;
 }
 
-.horizontal-position-pixel {
+.size {
+    width: 5px;
+    height: 5px;
+}
+
+/* POSICIONAMENTO */
+
+.horizontal {
     display: inline-block;
 }
