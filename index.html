@@ -5,68 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PIXEL ART</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 id="title">Paleta de Cores</h1>
+    <video autoplay loop poster="files/backgroundImage.jpg" id="bg_video">
+        <source src="files/background.webm" type="video/webm">
+        <source src="files/background.mp4" type="video/mp4">
+    </video>
 
-    <div id="color-palette">
-        <div class="color color-black border horizontal size selected"></div>
-        <div class="color color-red border horizontal size"></div>
-        <div class="color color-blue border horizontal size"></div>
-        <div class="color color-green border horizontal size"></div>
+    <h1 id="title" class="main-font bg-title">PIXEL ART</h1>
+
+    <div id="setup">
+        <div id="size" class="main-font horizontal">Escolha um tamanho:
+            <input id="board-size" type="number" min="1"
+                oninput="validity.valid ? this.save = value : value = this.save;" placeholder="Min: 5 Max: 30"
+                class="main-font">
+            <button id="generate-board" class="main-font">VQV!</button>
+        </div>
+
+        <div id="color" class="main-font horizontal">Escolha uma cor:
+            <input id="palette-color" class="horizontal main-font" type="color">
+            <button id="select-color" class="main-font">VQV!</button>
+            <button id="clear-board" class="main-font">Limpar</button>
+        </div>
     </div>
 
-    <button id="clear-board">Limpar</button>
-    <input id="board-size" type="number" min="1" oninput="validity.valid ? this.save = value : value = this.save;">
-    <button id="generate-board">VQV</button>
+    <main id="main">
+        <div id="pixel-board">
 
-    <div id="pixel-board">
+            <div id="board1" class="line newLine">
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+            </div>
 
-        <div id="board1" class="line newLine">
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
+            <div id="board2" class="line  newLine">
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+            </div>
+
+            <div id="board3" class="line  newLine">
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+            </div>
+
+            <div id="board4" class="line  newLine">
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+            </div>
+
+            <div id="board5" class="line  newLine">
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+                <div class="pixel color-white size border horizontal"></div>
+            </div>
         </div>
+    </main>
 
-        <div id="board2" class="line  newLine">
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-        </div>
-
-        <div id="board3" class="line  newLine">
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-        </div>
-
-        <div id="board4" class="line  newLine">
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-        </div>
-
-        <div id="board5" class="line  newLine">
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-            <div class="pixel color-white size border horizontal"></div>
-        </div>
-
-
-    </div>
+    <footer>
+        <H3 id="footer" class="main-font">Desenvolvido como projeto na <a href="https://www.betrybe.com/">TRYBE</a> por <a href="https://www.linkedin.com/in/dev-marcospaulo">Marcos Paulo</a>!</H3>
+    </footer>
     <script src="script.js"></script>
 </body>
 

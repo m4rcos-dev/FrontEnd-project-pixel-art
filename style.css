@@ -1,42 +1,91 @@
-/* CORES */
-
-.color-black {
-    background-color: black;
+/* GERAL */
+#bg_video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background: url(files/backgroundImage.jpg) no-repeat;
+  background-size: cover;
 }
 
-.color-red {
-    background-color: red;
+.main-font {
+  font-family: 'vt323', Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  text-align: center;
 }
 
-.color-blue {
-    background-color: blue;
+.horizontal {
+  display: inline-block;
 }
 
-.color-green {
-    background-color: green;
+/* TITLE */
+#title {
+  text-align: center;
+  font-size: 3em;
+  background-color: rgb(169, 169, 169, 0.5);
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+  position: fixed;
+  right: 1px;
+  left: 1px;
+  top: 3px;
+}
+
+/* MAIN */
+#main {
+  background-color: rgb(169, 169, 169, 0.5);
+  border-radius: 1em;
+  margin-top: 110px;
+  right: 1px;
+  left: 1px;
+}
+
+/* SETUP */
+#setup {
+  padding: 5px;
+  margin-top: 3.6em;
+  margin-bottom: -4px;
+  background-color: rgb(169, 169, 169, 0.5);
+  position: fixed;
+  right: 1px;
+  left: 1px;
+  top: 3px;
+}
+
+/* PIXEL BOARD */
+#pixel-board {
+  padding: 10px;
 }
 
 .color-white {
-    background-color: white;
+  background-color: white;
 }
 
-/* BORDAS */
 .border {
-    border: solid 1px;
-}
-
-/* TAMANHOS */
-.size-mainboard {
-    width: 25px;
+  border: solid 1px;
+  margin: -2px;
 }
 
 .size {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
-/* POSICIONAMENTO */
+/* RODAPÉ */
 
-.horizontal {
-    display: inline-block;
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(169, 169, 169, 0.5);
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
