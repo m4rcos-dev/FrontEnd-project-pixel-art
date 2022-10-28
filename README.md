@@ -1,3 +1,5 @@
+#### EN - English [(Versão em Português Brasil aqui)](https://github.com/m4rcos-dev/project-pixel-art/blob/main/README_pt-br.md)
+
 <h1 align="center">🎉 Welcome to my pixel art repository </h1>
 
 ![gif-pixel-art](https://user-images.githubusercontent.com/104791582/196544338-a81c3180-1e7c-424e-9381-79bacf2c7b9c.gif)
