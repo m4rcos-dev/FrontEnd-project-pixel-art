@@ -23,7 +23,6 @@
 ## 📥 Instalando Dependências
 
 ```bash
-cd src/
 npm install
 ``` 
 
