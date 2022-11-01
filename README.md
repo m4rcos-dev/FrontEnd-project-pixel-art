@@ -25,7 +25,6 @@
 ## 📥 Installing Dependencies
 
 ```bash
-cd src/
 npm install
 ``` 
 
